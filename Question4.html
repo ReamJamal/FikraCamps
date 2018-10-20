@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Question4</title>
+    </head>
+    <body>
+      
+
+               <p>CLICK TO COMBINE ARRAYS</p> 
+
+          
+
+<button onclick="myFunction()">COMBINE</button>
+
+<p id="ar"></p>
+
+<script>
+    
+    
+    
+function myFunction() {
+    var x = ["F", "i", "k" , "r" , "a"];
+    var y = ["1", "2", "3" , "4" , "5"];
+    var z="";
+    
+    for(var i=0; i < x.length; i++)
+    
+    {
+        
+        if(i != x.length - 1)
+            z += x[i] + "," +y[i] + ",";
+        else
+            z += x[i] + "," + y[i];
+        
+
+    }
+
+                document.getElementById("ar").innerHTML = z;
+
+    }
+
+
+</script>
+        
+    </body>
+</html>
